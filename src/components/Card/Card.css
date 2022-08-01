@@ -1,0 +1,44 @@
+.card {
+    width: 380px;
+    height: 403px;
+}
+
+.card-item {
+    width: 380px;
+    height: 305px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #F1F7FF;
+    border-radius: 30px 30px 0 0;
+}
+.card-info {
+    padding: 24px;
+
+    background: #fff;
+    border-radius: 0 0 30px 30px;
+}
+
+.card-title {
+    margin: 0;
+    padding-bottom: 8px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #212542;
+}
+
+.card-item-text {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: rgba(33, 37, 66, 0.7);
+}
+
