@@ -4,3 +4,6 @@
     align-items: center;
     gap: 10px;
 }
+.user-link {
+    cursor: pointer;
+}
