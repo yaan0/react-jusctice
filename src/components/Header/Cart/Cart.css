@@ -1,0 +1,32 @@
+.header-cart {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 53px;
+    position: relative;
+}
+
+.header-cart-quantity {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 15px;
+
+    background-color: #fe8888;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+
+}

@@ -1,0 +1,10 @@
+.footer {
+    width: 100%;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #fff
+}

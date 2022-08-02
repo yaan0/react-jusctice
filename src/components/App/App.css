@@ -1,15 +1,23 @@
-.App {
-  text-align: center;
+html,
+body {
+  height: 100%;
+  min-width: 375px;
 }
 
+.app {
+  height: 100vh;
+  min-height: 100%;
 
-.App-header {
-  background-color: #FDFDFF;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
+
+  background-color: #FDFDFF;
 }
+
+.wrapper {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
 
