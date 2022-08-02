@@ -5,13 +5,15 @@ const FooterBottom = () => {
 
   return (
     <div className="FooterBottom">
-      <p>
-        ©
-        {' '}
-        {date}
-        {' '}
-        Justice-team. All rights reserved.
-      </p>
+      <div className="container">
+        <p>
+          ©
+          {' '}
+          {date}
+          {' '}
+          Justice-team. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 };

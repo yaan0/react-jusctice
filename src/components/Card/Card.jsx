@@ -1,21 +1,20 @@
 import './Card.css';
-import CardItem from '../../resourses/img/png/ice-cream.png';
 
-const Card = ({ label, price }) => (
+const Card = ({ data }) => (
   <div className="card">
     <div className="card-container container">
       <div className="card-item">
-        <img className="card__logo-image" src={CardItem} alt="ice-cream" />
+        <img className="card__logo-image" src={data.url} alt="ice-cream" />
       </div>
       <div className="card-info">
 
         <h3 className="card-title">
-          {label}
+          {data.title}
 
         </h3>
         <div className="card-text">
           <p className="card-item-text">
-            {price}
+            {data.price}
           </p>
         </div>
       </div>
