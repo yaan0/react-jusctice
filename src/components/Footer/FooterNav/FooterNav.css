@@ -1,9 +1,7 @@
 .footer__body {
     display: flex;
     justify-content: space-between;
-
     align-items: center;
-
     margin: 48px 0 54px 0;
 }
 

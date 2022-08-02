@@ -7,10 +7,9 @@ const FooterBottom = () => {
     <div className="FooterBottom">
       <div className="container">
         <p>
-          ©
           {' '}
+          ©&nbsp;
           {date}
-          {' '}
           Justice-team. All rights reserved.
         </p>
       </div>

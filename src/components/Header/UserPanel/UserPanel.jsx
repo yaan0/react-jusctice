@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import Cart from '../Cart/Cart';
 // import SignUp from '../SignUp/SignUp';
+
 import './UserPanel.css';
 import user from '../../../resourses/img/svg/user.svg';
 
