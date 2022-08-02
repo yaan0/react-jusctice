@@ -11,8 +11,8 @@ const Footer = () => (
         <LogoFooter />
         <FooterNav />
       </div>
-      <FooterBottom />
     </div>
+    <FooterBottom />
   </div>
 );
 

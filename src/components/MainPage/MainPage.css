@@ -1,0 +1,24 @@
+.main__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 48px;
+
+}
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.main-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 120px;
+}
