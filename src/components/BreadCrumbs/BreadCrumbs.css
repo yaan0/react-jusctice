@@ -1,0 +1,14 @@
+.productCard-nav {
+    margin: 41px 0 30px 0;
+}
+
+.productCard-list {
+    display: flex;
+    gap: 8px;
+}
+
+.link__nav-page {
+    color: #212542;
+    opacity: 0.5;
+    padding-right: 8px;
+}

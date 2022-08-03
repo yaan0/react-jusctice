@@ -50,7 +50,7 @@ const MainPage = () => (
       </h1>
     </div>
     <div className="main-card">
-      {data.map((element) => <Card data={element} />)}
+      {data.map(({ url, title, price }) => <Card img={url} price={price} title={title} />)}
     </div>
   </div>
 );
