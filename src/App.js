@@ -1,7 +1,7 @@
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 // import MainPage from '../MainPage/MainPage';
-import ProductCard from '../Card/ProductCard/ProductCard';
+import ProductCardPage from './Layouts/ProductCardPage';
 
 import './App.css';
 
@@ -10,7 +10,7 @@ const App = () => (
     <div className="wrapper">
       <Header />
       {/* <MainPage /> */}
-      <ProductCard />
+      <ProductCardPage />
       <Footer />
     </div>
   </div>
