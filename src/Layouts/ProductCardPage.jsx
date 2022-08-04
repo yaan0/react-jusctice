@@ -1,3 +1,4 @@
+
 import ProductCard from '../components/ProductCard/ProductCard';
 import BreadCrumbs from '../components/BreadCrumbs/BreadCrumbs';
 
@@ -18,7 +19,7 @@ const data = {
 };
 
 const ProductCardPage = () => (
-  <div>
+  <div className="">
     <BreadCrumbs />
     <ProductCard id={data.id} title={data.title} description={data.description} text={data.text} price={data.price} />
   </div>

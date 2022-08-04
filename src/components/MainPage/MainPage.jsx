@@ -35,6 +35,21 @@ const data = [
     title: 'Snow Tender Ice Cream',
     price: '$243.00',
   },
+  {
+    url: '/images/icecream.png',
+    title: 'Snow Tender Ice Cream',
+    price: '$243.00',
+  },
+  {
+    url: '/images/icecream.png',
+    title: 'Snow Tender Ice Cream',
+    price: '$243.00',
+  },
+  {
+    url: '/images/icecream.png',
+    title: 'Snow Tender Ice Cream',
+    price: '$243.00',
+  },
 ];
 
 const MainPage = () => (

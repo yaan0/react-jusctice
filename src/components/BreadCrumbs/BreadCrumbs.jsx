@@ -1,18 +1,21 @@
 import './BreadCrumbs.css';
+import { Link } from 'react-router-dom';
 
 const BreadCrumbs = () => (
   <div className="container">
     <nav className="productCard-nav">
       <ul className="productCard-list">
         <li className="productCard-list-item">
-          <a className="product-list-link link__nav-page" href="/react-app/my-app/public">
-            Main page /
-          </a>
+          <div className="product-list-link link__nav-page">
+            <Link to="/">
+              Main page /
+            </Link>
+          </div>
         </li>
         <li className="productCard-list-item">
-          <a className="product-list-link" href="/react-app/my-app/public">
+          <p className="product-list-link">
             Product card
-          </a>
+          </p>
         </li>
       </ul>
     </nav>
