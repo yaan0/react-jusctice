@@ -12,3 +12,7 @@
     opacity: 0.5;
     padding-right: 8px;
 }
+
+.product-list-link {
+    cursor: pointer;
+}
