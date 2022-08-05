@@ -2,7 +2,7 @@ import Card from '../Card/Card';
 
 import './MainPage.css';
 
-import heart from '../../resourses/img/svg/heart.svg';
+import heart from '../../assets/img/svg/heart.svg';
 
 const data = [
   {
@@ -76,7 +76,7 @@ const MainPage = () => (
     <div className="main-card">
       {data.map(({
         url, title, price, id,
-      }) => <Card img={url} price={price} title={title} id={id} />)}
+      }) => <Card img={url} price={price} title={title} id={id} key={id} />)}
     </div>
   </div>
 );

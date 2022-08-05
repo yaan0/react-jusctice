@@ -19,7 +19,7 @@ const data = {
 };
 
 const ProductCardPage = () => (
-  <div className="">
+  <div className="productCardPageLayouts">
     <BreadCrumbs />
     <ProductCard id={data.id} title={data.title} description={data.description} text={data.text} price={data.price} />
   </div>

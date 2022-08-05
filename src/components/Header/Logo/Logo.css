@@ -4,3 +4,7 @@
     align-items: center;
     gap: 11px;
 }
+
+.logo-img-text {
+    cursor: pointer;
+}
