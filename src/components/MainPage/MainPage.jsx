@@ -76,7 +76,7 @@ const MainPage = () => (
     <div className="main-card">
       {data.map(({
         url, title, price, id,
-      }) => <Card img={url} price={price} title={title} id={id} />)}
+      }) => <Card img={url} price={price} title={title} id={id} key={id} />)}
     </div>
   </div>
 );

@@ -1,8 +1,9 @@
 import './BreadCrumbs.css';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const BreadCrumbs = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <div className="container">
@@ -15,7 +16,7 @@ const BreadCrumbs = () => {
           </li>
           <li className="productCard-list-item">
             <p className="product-list-link">
-              Product card
+              {location.pathname.includes('basket') ? 'Basket' : 'Product Card'}
             </p>
           </li>
         </ul>

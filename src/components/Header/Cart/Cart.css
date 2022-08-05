@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.cart-item__text {
+    cursor: pointer;
+}
+
 .header-cart-quantity {
     position: absolute;
     content: '';
@@ -28,5 +32,4 @@
     font-style: normal;
     font-weight: 700;
     font-size: 8px;
-
 }

@@ -1,0 +1,131 @@
+
+
+.basket-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 69px;
+
+}
+
+.body-item__title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+
+    margin: 30px 0 48px 0;
+}
+
+.basket-item__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.basket-content__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #F4F5FF;
+}
+
+.content__basket-item {
+    display: flex;
+    gap: 24px;
+}
+
+.content__basket-img {
+    width: 120px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F1F7FF;
+    border-radius: 10px;
+}
+
+.content__basket-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item__content-title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+
+    margin-bottom: 16px;
+}
+
+.item__content-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(33, 37, 66, 0.7);
+    line-height: 14px;
+}
+
+.content__basket-price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.item__content-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(33, 37, 66, 0.7);
+}
+
+.wrapper__content-total {
+    width: 340px;
+    height: 199px;
+    background: #FFFFFF;
+    border: 1px solid #F4F5FF;
+    border-radius: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-total__sub {
+    display: flex;
+    justify-content: space-between;
+    gap: 114px;
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #F4F5FF;;
+}
+
+.total-item__title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.total-item__price {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+.item__wrapper-button {
+    width: 276px;
+    height: 60px;
+    color: #fff;
+    background: linear-gradient(92.65deg, #DFEBFF -21.79%, #88ADCA 126.46%), #AECEF3;
+    border-radius: 69px;
+}
