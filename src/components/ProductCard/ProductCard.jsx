@@ -1,6 +1,6 @@
 import './ProductCard.css';
-import addButton from '../../resourses/img/svg/addButton.svg';
-import addedCard from '../../resourses/img/svg/addedCard.svg';
+import addButton from '../../assets/img/svg/addButton.svg';
+import addedCard from '../../assets/img/svg/addedCard.svg';
 
 const ProductCard = ({
   id, title, description, text, price,

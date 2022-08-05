@@ -1,6 +1,6 @@
 import './Basket.css';
 
-import delateBasket from '../../resourses/img/svg/delateBasket.svg';
+import delateBasket from '../../assets/img/svg/delateBasket.svg';
 
 const Basket = () => (
   <div className="basket-main">

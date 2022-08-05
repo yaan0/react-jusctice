@@ -2,7 +2,7 @@ import Card from '../Card/Card';
 
 import './MainPage.css';
 
-import heart from '../../resourses/img/svg/heart.svg';
+import heart from '../../assets/img/svg/heart.svg';
 
 const data = [
   {

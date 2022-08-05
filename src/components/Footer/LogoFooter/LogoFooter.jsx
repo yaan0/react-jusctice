@@ -1,6 +1,6 @@
 import './LogoFooter.css';
-import logo from '../../../resourses/img/svg/logo.svg';
-import logoText from '../../../resourses/img/svg/logo-text.svg';
+import logo from '../../../assets/img/svg/logo.svg';
+import logoText from '../../../assets/img/svg/logo-text.svg';
 
 const LogoFooter = () => (
   <div className="footer-logo">
