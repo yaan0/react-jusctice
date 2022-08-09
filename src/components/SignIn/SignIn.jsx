@@ -29,7 +29,7 @@ const SignIn = ({ signInIsOpen, setSignInIsOpen, setSignUpIsOpen }) => {
           <span className="modal-close__line2 modal-close__line" />
         </div>
 
-        <h3 className="user-title">Create an account</h3>
+        <h3 className="user-title">Log in to your account</h3>
 
         <label className="image-replace cd-email">
           Email

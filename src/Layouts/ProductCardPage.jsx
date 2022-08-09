@@ -18,10 +18,19 @@ const data = {
 
 };
 
-const ProductCardPage = () => (
+const ProductCardPage = ({ setSignInIsOpen, count, setCount }) => (
   <div className="productCardPageLayouts">
     <BreadCrumbs />
-    <ProductCard id={data.id} title={data.title} description={data.description} text={data.text} price={data.price} />
+    <ProductCard
+      id={data.id}
+      title={data.title}
+      description={data.description}
+      text={data.text}
+      price={data.price}
+      setSignInIsOpen={setSignInIsOpen}
+      count={count}
+      setCount={setCount}
+    />
   </div>
 );
 

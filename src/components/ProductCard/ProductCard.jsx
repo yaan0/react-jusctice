@@ -1,28 +1,27 @@
-import './ProductCard.css';
 import { useState } from 'react';
+
+import SignIn from '../SignIn/SignIn';
+
 import addButton from '../../assets/img/svg/addButton.svg';
 import addedCard from '../../assets/img/svg/addedCard.svg';
 import spinner from '../../assets/img/svg/spinner.svg';
+import './ProductCard.css';
 
 const ProductCard = ({
-  id, title, description, text, price,
+  id, title, description, text, price, setSignInIsOpen, count, setCount,
 }) => {
   const [totalPrice, setTotalPrice] = useState(price);
-  const [count, setCount] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
-  const [show, setShow] = useState(false);
-
-  const state = {
-    img: addedCard,
-    text: 'Added to card',
-  };
-
+  const [isAuth] = useState(Boolean(localStorage.getItem('user')));
   const clickHandler = () => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-      setShow(true);
-    }, 1500);
+    if (isAuth) {
+      setIsLoading(true);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1500);
+    } else {
+      setSignInIsOpen(true);
+    }
   };
 
   const incrementProduct = () => {
@@ -33,6 +32,11 @@ const ProductCard = ({
   const decrementProduct = () => {
     setTotalPrice(totalPrice - price);
     setCount(count - 1);
+  };
+
+  const state = {
+    img: addedCard,
+    text: 'Added to card',
   };
 
   return (
@@ -72,12 +76,12 @@ const ProductCard = ({
                   </>
                 )}
               </button>
-              {show ? (
+              {isAuth ? (
                 <div className="content-img">
                   <img src={state.img} alt="addedCard" />
                   <p>{state.text}</p>
                 </div>
-              ) : null}
+              ) : <SignIn />}
 
             </div>
           </div>

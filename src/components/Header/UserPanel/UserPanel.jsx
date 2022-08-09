@@ -21,6 +21,7 @@ const UserPanel = ({
           ? (
             <>
               <p>{userPanel.name}</p>
+              /
               <button className="logOut-user" onClick={logOut}> Logout</button>
             </>
           )

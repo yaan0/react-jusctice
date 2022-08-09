@@ -101,13 +101,11 @@
     color: rgba(33, 37, 66, 0.25);
 }
 
-/*.has-margin {*/
-/*    margin-bottom: 32px;*/
-/*}*/
-
 .user-errors {
     color: red;
-    /*margin-bottom: 24px;*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .border-signUp {
