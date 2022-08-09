@@ -3,9 +3,7 @@ import Logo from './Logo/Logo';
 
 import './Header.css';
 
-const Header = ({
-  setSignUpIsOpen, setSignInIsOpen,
-}) => (
+const Header = ({ setSignUpIsOpen, setSignInIsOpen, count }) => (
   <div className="header">
     <div className="container">
       <div className="header__wrapper">
@@ -13,6 +11,7 @@ const Header = ({
         <UserPanel
           setSignUpIsOpen={setSignUpIsOpen}
           setSignInIsOpen={setSignInIsOpen}
+          count={count}
         />
       </div>
     </div>

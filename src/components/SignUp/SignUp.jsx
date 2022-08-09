@@ -9,7 +9,7 @@ const SignUp = ({ signUpIsOpen, setSignUpIsOpen, setSignInIsOpen }) => {
     name: yup.string().min(2, 'At least two characters').required('Required field'),
     password: yup
       .string()
-      .matches(/[A-Z]/, 'should be includes min 1 english upper case letter')
+      .matches(/[A-Z]/, 'should be includes min 1 upper case letter')
       .min(6, 'should be min 6 letters')
       .required('Required field'),
     email: yup.string().email().required('Required field'),

@@ -15,7 +15,7 @@ import SignIn from './components/SignIn/SignIn';
 const App = () => {
   const [signUpIsOpen, setSignUpIsOpen] = useState(false);
   const [signInIsOpen, setSignInIsOpen] = useState(false);
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(false);
 
   return (
     <div className="app">
@@ -23,6 +23,7 @@ const App = () => {
         <Header
           setSignUpIsOpen={setSignUpIsOpen}
           setSignInIsOpen={setSignInIsOpen}
+          count={count}
         />
         <SignUp signUpIsOpen={signUpIsOpen} setSignUpIsOpen={setSignUpIsOpen} setSignInIsOpen={setSignInIsOpen} />
         <SignIn signInIsOpen={signInIsOpen} setSignInIsOpen={setSignInIsOpen} setSignUpIsOpen={setSignUpIsOpen} />

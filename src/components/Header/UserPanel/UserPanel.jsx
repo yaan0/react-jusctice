@@ -3,9 +3,7 @@ import Cart from '../Cart/Cart';
 import './UserPanel.css';
 import user from '../../../assets/img/svg/user.svg';
 
-const UserPanel = ({
-  setSignUpIsOpen, setSignInIsOpen,
-}) => {
+const UserPanel = ({ setSignUpIsOpen, setSignInIsOpen, count }) => {
   const userPanel = JSON.parse(localStorage.getItem('user'));
 
   const logOut = () => {
@@ -37,7 +35,7 @@ const UserPanel = ({
 
       <div>
         {' '}
-        <Cart />
+        <Cart count={count} />
         {' '}
       </div>
     </div>
