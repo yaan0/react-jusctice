@@ -1,33 +1,44 @@
-import { useState } from 'react';
-
 import Cart from '../Cart/Cart';
-import SignUp from '../SignUp/SignUp';
 
 import './UserPanel.css';
 import user from '../../../assets/img/svg/user.svg';
 
-const UserPanel = () => {
-  const [modalActive, setModalActive] = useState(false);
-  const [IsAuth] = useState(false);
+const UserPanel = ({
+  setSignUpIsOpen, setSignInIsOpen,
+}) => {
+  const userPanel = JSON.parse(localStorage.getItem('user'));
+
+  const logOut = () => {
+    localStorage.clear();
+  };
 
   return (
     <div className="header-user">
       <img className="user-img" src={user} alt="user" />
 
-      {IsAuth ? (<a className="user-link" href="/">Logout</a>) : (
-        <div>
-          <button className="user-link" onClick={() => setModalActive(true)}>Sign up</button>
-          {' / '}
-          <button className="user-link">Sing in</button>
-        </div>
-      )}
+      {
+        localStorage.getItem('user')
+          ? (
+            <>
+              <p>{userPanel.name}</p>
+              <button className="logOut-user" onClick={logOut}> Logout</button>
+            </>
+          )
+          : (
+            <>
+              <button className="user-link" onClick={() => setSignUpIsOpen(true)}>Sign up</button>
+              {' / '}
+              <button className="user-link" onClick={() => setSignInIsOpen(true)}>Sing in</button>
+            </>
+          )
+
+      }
+
       <div>
         {' '}
         <Cart />
         {' '}
       </div>
-
-      <SignUp modalActive={modalActive} setModalActive={setModalActive} />
     </div>
   );
 };

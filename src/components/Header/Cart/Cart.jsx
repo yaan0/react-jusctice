@@ -7,7 +7,7 @@ const Cart = () => {
   const navigate = useNavigate();
   return (
     <div className="header-cart">
-      <img className="user-cart-img" src={cart} alt="cart" />
+      <img className="user-cart-img" src={cart} alt="cart" onClick={() => navigate('basket')} />
       <p className="cart-item__text" onClick={() => navigate('basket')}>Cart</p>
       <span className="header-cart-quantity">1</span>
     </div>
