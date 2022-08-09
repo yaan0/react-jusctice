@@ -10,6 +10,7 @@ const FooterBottom = () => {
           {' '}
           ©&nbsp;
           {date}
+          {' '}
           Justice-team. All rights reserved.
         </p>
       </div>

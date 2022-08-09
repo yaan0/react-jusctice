@@ -5,7 +5,9 @@
     margin-left: 53px;
     position: relative;
 }
-
+.user-cart-img {
+    cursor: pointer;
+}
 .cart-item__text {
     cursor: pointer;
 }

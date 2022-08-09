@@ -1,28 +1,41 @@
-import { useState } from 'react';
-
 import Cart from '../Cart/Cart';
-// import SignUp from '../SignUp/SignUp';
 
 import './UserPanel.css';
 import user from '../../../assets/img/svg/user.svg';
 
-const UserPanel = () => {
-  const [IsAuth] = useState(true);
+const UserPanel = ({ setSignUpIsOpen, setSignInIsOpen, count }) => {
+  const userPanel = JSON.parse(localStorage.getItem('user'));
+
+  const logOut = () => {
+    localStorage.clear();
+  };
 
   return (
     <div className="header-user">
       <img className="user-img" src={user} alt="user" />
 
-      {IsAuth ? (<a className="user-link" href="/">Logout</a>) : (
-        <div>
-          <a className="user-link" href="/">Sign up</a>
-          {' / '}
-          <a className="user-link" href="/">Sing in</a>
-        </div>
-      )}
+      {
+        localStorage.getItem('user')
+          ? (
+            <>
+              <p>{userPanel.name}</p>
+              /
+              <button className="logOut-user" onClick={logOut}> Logout</button>
+            </>
+          )
+          : (
+            <>
+              <button className="user-link" onClick={() => setSignUpIsOpen(true)}>Sign up</button>
+              {' / '}
+              <button className="user-link" onClick={() => setSignInIsOpen(true)}>Sing in</button>
+            </>
+          )
+
+      }
+
       <div>
         {' '}
-        <Cart />
+        <Cart count={count} />
         {' '}
       </div>
     </div>

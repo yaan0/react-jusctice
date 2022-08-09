@@ -6,4 +6,9 @@
 }
 .user-link {
     cursor: pointer;
+    background: none;
+}
+
+.logOut-user {
+    background: none;
 }

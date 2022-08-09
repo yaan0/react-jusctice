@@ -14,14 +14,23 @@ const data = {
     + 'Blast freezing with liquid nitrogen (-193°C), '
     + 'which freezes all the ingredients instantly and gives the ice cream an '
     + 'amazingly delicate texture, preserving all the flavors, vitamins and nutrients by 99%.',
-  price: '$243.00',
+  price: 243,
 
 };
 
-const ProductCardPage = () => (
+const ProductCardPage = ({ setSignInIsOpen, count, setCount }) => (
   <div className="productCardPageLayouts">
     <BreadCrumbs />
-    <ProductCard id={data.id} title={data.title} description={data.description} text={data.text} price={data.price} />
+    <ProductCard
+      id={data.id}
+      title={data.title}
+      description={data.description}
+      text={data.text}
+      price={data.price}
+      setSignInIsOpen={setSignInIsOpen}
+      count={count}
+      setCount={setCount}
+    />
   </div>
 );
 
